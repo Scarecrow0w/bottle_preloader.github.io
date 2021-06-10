@@ -34,7 +34,8 @@
 }
 
 .ip-logo,
-.ip-loader {
+.ip-loader,
+.ip-bottle {
 	position: absolute;
 	left: 0;
 	width: 100%;
@@ -184,7 +185,7 @@
 	animation: animInitialHeader 1s cubic-bezier(0.7,0,0.3,1) both;
 }
 
-.loading .ip-loader, .loading  {
+.loading .ip-loader, .loading .ip-bottle {
 	-webkit-animation-delay: 0.2s;
 	animation-delay: 0.2s;
 }
