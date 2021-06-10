@@ -122,25 +122,29 @@ window.document.addEventListener("readystatechange", function(){
 						if(progress >= 0 && progress <= 0.3){
 							animationInterval *= 3;
 							bottleFill[0].setAttribute('offset', progress)
-							bottleFill[1].setAttribute('offset', progress + 0.1)
+							// bottleFill[1].setAttribute('offset', progress + 0.1)
+							bottleFill[1].setAttribute('offset', progress)
 						}
 						else if(progress > 0.3 && progress <= 0.6){
 							animationInterval *= 4;
 							bottleFill[0].setAttribute('offset', progress)
-							bottleFill[1].setAttribute('offset', progress + 0.1)
+							// bottleFill[1].setAttribute('offset', progress + 0.1)
+							bottleFill[1].setAttribute('offset', progress)
 						}
 						else if(progress > 0.6 && progress <= 0.8){
 							animationInterval *= 8;
 							bottleFill[0].setAttribute('offset', progress)
-							bottleFill[1].setAttribute('offset', progress + 0.1)
+							// bottleFill[1].setAttribute('offset', progress + 0.1)
+							bottleFill[1].setAttribute('offset', progress)
 						}
 						else if(progress > 0.8 && progress < 0.9){
 							animationInterval *= 12;
 							bottleFill[0].setAttribute('offset', progress)
-							bottleFill[1].setAttribute('offset', progress + 0.1)
+							// bottleFill[1].setAttribute('offset', progress + 0.1)
+							bottleFill[1].setAttribute('offset', progress)
 						}
 						else if(progress >= 0.9){
-							bottleFill[0].setAttribute('offset', '0.89')
+							bottleFill[0].setAttribute('offset', '0.99')
 							bottleFill[1].setAttribute('offset', '0.99')
 						}
 						setTimeout(updateProgress, animationInterval);    
