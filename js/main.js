@@ -104,7 +104,8 @@ window.document.addEventListener("readystatechange", function(){
 					if(readyState == 'complete'){
 						window.removeEventListener( 'scroll', noscroll );
 						console.log('loading ' + document.readyState);
-						bottleFill[0].setAttribute('offset', '0.9')
+						// bottleFill[0].setAttribute('offset', '0.9')
+						bottleFill[0].setAttribute('offset', '1')
 						bottleFill[1].setAttribute('offset', '1')
 						setTimeout(() => {
 							classie.remove( container, 'loading' );
